@@ -1,0 +1,78 @@
+        .menu a:link{
+            font-family: VT323, monospace;
+            padding: 0px;
+            margin: 0px;
+            text-decoration:none;
+        }        
+        .menu a:hover{
+            font-family: VT323, monospace;
+            padding: 0px;
+            margin: 0px;
+            color: transparent;
+            text-shadow: 0 0 4px rgba(0,0,0,0.3);
+            text-decoration-line: none;
+            
+        }  
+        
+        .menu a:visited {
+            color: black;
+        }
+        
+        
+		h1 {
+			font-family:  'Vollkorn', serif;
+            font-size: 70px;
+            font-weight: 400;
+            padding: 0px;
+    margin: 0px;
+		}
+
+
+	   .indexbig  a:link {
+			font-family:  'Vollkorn', serif;
+            font-size: 40px;
+            font-weight: 400;
+            text-decoration: none;
+           color: black
+		}
+        
+ 		.indexbig a:hover {
+			font-family:  'Vollkorn', serif;
+            font-size: 40px;
+            font-weight: 400;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(0,0,0,0.3);
+            text-decoration: none;
+            
+		}
+
+        .indexbig a:visited {
+            color: black;
+}
+        
+        .body a:link {
+			font-family:  'Vollkorn', serif;
+            font-size: 40px;
+            font-weight: 400;
+            text-decoration-line: none;
+		}
+        
+        .body a:hover {
+			font-family:  'Vollkorn', serif;
+            font-size: 40px;
+            font-weight: 400;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(0,0,0,0.3);
+            text-decoration-line: none;
+            
+		}
+        
+        .body a:visited {
+            color: black;
+        }
+        
+body{
+background: #fcf9eb; 
+}
+
+        
