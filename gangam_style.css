@@ -8,6 +8,8 @@
 */
 
 
+/*		MENU STYLE
+*/
         .menu a:link{
             font-family: VT323, monospace;
             padding: 0px;
@@ -34,16 +36,19 @@
             font-size: 70px;
             font-weight: 400;
             padding: 0px;
-    margin: 0px;
+    		margin: 0px;
 		}
 
 
+/*
+		Big links in the index page
+*/
 	   .indexbig  a:link {
 			font-family:  'Vollkorn', serif;
             font-size: 40px;
             font-weight: 400;
             text-decoration: none;
-           color: black
+			color: black
 		}
         
  		.indexbig a:hover {
@@ -81,8 +86,11 @@
             color: black;
         }
         
-body{
-background: #fcf9eb; 
-}
+		
+/*      BACKGROUD COLOR
+*/
+		body{
+		background: #fcf9eb; 
+		}
 
         
