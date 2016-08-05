@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="noUiSlider/nouislider.min.css" rel="stylesheet">
+    <script src="noUiSlider/nouislider.min.js"></script>
+</head>
+
+
+<body class="language-javascript">
+
+	
+		<div class="index-demo">
+
+			<h1>AGE SLIDER</h1>
+			<h2>Select year</h2>
+
+			<div class="quick">
+
+				<div id="slider"></div>
+                
+                
+                <p id="demo"></p>
+                
+<script>
+    
+    var people = [
+        
+        {fullName: "Donald Trump", born: 1946},
+        {fullName: "Barack Obama", born: 1961},
+        {fullName: "Tim Berners-Lee", born: 1955},
+        {fullName: "Daniel Radcliffe", born: 1989},
+        {fullName: "Woody Allen", born: 1983}
+    ];
+    
+    var numOfPeople = people.length;
+    
+    var i;
+    
+    
+    var yearSlider = document.getElementById('slider');
+
+    noUiSlider.create(yearSlider, {
+                                start: 2016,
+                                tooltips: true,
+                                step: 1,
+                                range: {
+                                    'min': 2016,
+                                    'max': 2100
+                             
+        }
+    });
+    
+    
+    
+    function getTxtList(year) {
+        txt = ""
+        for (i = 0; i < numOfPeople ; i++){
+            var locAge = year - people[i].born;
+            txt += people[i].fullName + " " + locAge + "<br>" 
+        }
+        return txt
+    }
+    
+
+    yearSlider.noUiSlider.on('update', function( values, handle ){
+    document.getElementById("demo").innerHTML = getTxtList(values[handle]);
+});
+    
+    
+</script>			
+    
+</body>
+</html>
