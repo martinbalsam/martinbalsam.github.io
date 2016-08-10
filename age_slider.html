@@ -29,8 +29,7 @@
                 
 <script>
     
-    var people = [
-        
+    var people = [   
         {fullName: "Donald Trump", born: 1946},
         {fullName: "Barack Obama", born: 1961},
         {fullName: "Tim Berners-Lee", born: 1955},
@@ -45,32 +44,26 @@
         {fullName : "Recep Tayyip Erdo&#287an" , born : 1954},
         {fullName : "Gary Johnson" , born : 1953},
         {fullName : "Queen Elizabeth" , born : 1926},
-        {fullName : "Edward Snowden" , born : 1983}
-
-        
-        
+        {fullName : "Edward Snowden" , born : 1983}    
     ];
     
     var numOfPeople = people.length;
-    
     var i;
-    
     
     var yearSlider = document.getElementById('slider');
 
+//  TODO: add unit precision for this slider
     noUiSlider.create(yearSlider, {
                                 start: 2016,
                                 tooltips: true,
                                 step: 1,
                                 range: {
                                     'min': 2016,
-                                    'max': 2100
-                             
-        }
-    });
+                                    'max': 2100                  
+                                        }
+                                    });
     
-    
-    
+
     function getTxtList(year) {
         txt = ""
         for (i = 0; i < numOfPeople ; i++){
@@ -84,8 +77,6 @@
     yearSlider.noUiSlider.on('update', function( values, handle ){
     document.getElementById("demo").innerHTML = getTxtList(values[handle]);
 });
-    
-    
 </script>			
     
 </body>
